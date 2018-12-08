@@ -16,7 +16,7 @@ body {
 header {
 
   background: url(content/Background_header.png) no-repeat center center;;
-  overflow: hidden;
+  overflow: auto;
   background-size: cover ;
   
 }
@@ -37,11 +37,8 @@ header {
 
 .header_text {
 width: 331px;
-height: 88px;
-color: black;
-font-family: Catamaran;
+height: 117px;
 font-size: 36px;
-font-weight: 500;
 line-height: 54px;
 letter-spacing: 3.6px;
 text-align: center;
@@ -168,6 +165,10 @@ letter-spacing: 3px;
   padding-bottom: 10px; 
 }
 
+.content2 p {
+  padding-bottom: 30px;
+}
+
 .img1 img {
 width: 68px;
 height: 68px;
@@ -211,13 +212,55 @@ footer {
 
 }
 
-.text_footer .content14 {
-  color: #fff;
-  text-align: center;
-  font-size: 18px;
+.contacts14 {
+  display: flex;
+  justify-content: space-between;
+  margin: 35px 97px 34px 0px;
+}
+.line {
+  width: 45px;
+  height: 5px;
+  background-color: #ffffff;
+  margin-top: 8px;
 }
 
-.text_footer .content14 p {
-  margin-bottom: 15px;
-  margin-right: 97px;
+.line1 {
+  width: 45px;
+  height: 5px;
+  background-color: #ffffff;
+  margin-top: 8px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.footer_text {
+  width: 191px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 1.6px;
+  text-align: center;
+  
+}
+
+@media (max-width: 530px){
+  footer {
+    justify-content: center;
+  }
+.logo_footer{
+  display:none;
+
+}
+.contacts14 {
+  margin: 0px;
+}
+}
+
+@media (max-width: 390px) {
+  .header_form {
+    display: none;
+  }
 }
