@@ -1,7 +1,16 @@
+
+
 * {
   margin: 0;
   padding: 0;
-  font-family: Catamaran;
+  
+}
+
+@font-face{
+
+  font-family: "CatamaranBlack";
+    src: url('../fonts/Catamaran-Black.ttf');
+
 }
 
 html,
@@ -14,7 +23,7 @@ body {
 }
 
 header {
-
+  font-family: "CatamaranBlack", sans-serif;
   background: url(content/Background_header.png) no-repeat center center;;
   overflow: auto;
   background-size: cover ;
@@ -42,6 +51,7 @@ font-size: 36px;
 line-height: 54px;
 letter-spacing: 3.6px;
 text-align: center;
+font-family: 'CatamaranBlack';
 }
 
 .header_form {
@@ -95,6 +105,7 @@ text-align: center;
   margin-left: 13px;
   margin-bottom: 15px;
   color: #ffffff;
+
 }
 
 .submit {
@@ -106,6 +117,7 @@ text-align: center;
 }
 
 main {
+  font-family: "CatamaranBlack", sans-serif;
   padding-bottom: 180px;
   width: 100%;
   background-color: #ffffff;
@@ -125,9 +137,11 @@ font-size: 30px;
 font-weight: bold;
 line-height: 36px;
 letter-spacing: 3px;
+font-family: 'CatamaranBlack';
 }
 
 .text2 {
+font-family: 'CatamaranBlack';
 align-self: center;
 margin-top: 17px;
 height: 40px;
@@ -192,6 +206,7 @@ height: 76px;
 
 
 footer {
+  font-family: "CatamaranBlack", sans-serif;
   display:flex;
   position: absolute;
   left: 0;
