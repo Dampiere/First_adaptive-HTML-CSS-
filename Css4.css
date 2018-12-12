@@ -1,16 +1,26 @@
-
-
 * {
   margin: 0;
   padding: 0;
-  
 }
 
-@font-face{
+@font-face {
+  font-family: "CatamaranMedium";
+  src: url("../fonts/Catamaran/Catamaran-Medium.ttf");
+}
 
+@font-face {
   font-family: "CatamaranBlack";
-    src: url('../fonts/Catamaran-Black.ttf');
+  src: url("../fonts/Catamaran/Catamaran-Black.ttf");
+}
 
+@font-face {
+  font-family: "Catamaran";
+  src: url("../fonts/Catamaran/Catamaran-Regular.ttf");
+}
+
+@font-face {
+  font-family: "CatamaranLight";
+  src: url("../fonts/Catamaran/Catamaran-Light.ttf");
 }
 
 html,
@@ -23,11 +33,9 @@ body {
 }
 
 header {
-  font-family: "CatamaranBlack", sans-serif;
-  background: url(content/Background_header.png) no-repeat center center;;
+  background: url(../content/Background_header.png) no-repeat center center;
   overflow: auto;
-  background-size: cover ;
-  
+  background-size: cover;
 }
 
 .content {
@@ -40,18 +48,20 @@ header {
 
 .logo {
   margin-bottom: 55px;
-  margin-left:  27px;
-  
+  margin-left: 27px;
 }
 
 .header_text {
-width: 331px;
-height: 117px;
-font-size: 36px;
-line-height: 54px;
-letter-spacing: 3.6px;
-text-align: center;
-font-family: 'CatamaranBlack';
+  margin-bottom:35px;
+  max-width: 350px;
+  height: 88px;
+  font-size: 36px;
+  line-height: 54px;
+  color: #333333;
+  letter-spacing: 3.6px;
+  text-align: center;
+  font-family: "CatamaranMedium";
+  font-weight: 500;
 }
 
 .header_form {
@@ -63,24 +73,29 @@ font-family: 'CatamaranBlack';
 }
 
 .up {
-  display:flex;
+  display: flex;
   justify-content: space-around;
   widows: 190px;
   height: 58px;
-
 }
 
 .tab {
   width: 50%;
-  text-align: center; 
+  text-align: center;
   padding-top: 21px;
 }
 
 .join {
-  color:white;
+  font-family: "Catamaran";
+  font-size: 18px;
+  letter-spacing: 1.8px;
+  color: white;
 }
 
 .sign {
+  font-family: "Catamaran";
+  font-size: 18px;
+  letter-spacing: 1.8px;
   background: #ffffff;
 }
 
@@ -91,29 +106,44 @@ font-family: 'CatamaranBlack';
 }
 
 .regestration input {
-  width: 347px;
+  width: 342px;
   height: 40px;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
   margin-left: 13px;
+  margin-top: 7px;
+  padding: 0 0 0 5px;
 }
 
 .tux {
-  margin-top: 15px;
+  margin-top: 8px;
 }
 
 .regestration p {
-  margin-left: 13px;
-  margin-bottom: 15px;
+  height: 40px;
   color: #ffffff;
-
+  font-family: "Catamaran";
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 1.6px;
+  margin-top: 14px;
+  margin-left: 13px;
 }
 
 .submit {
-  background-color: #ff6600;
-  border: 0;
+   border: 0;
   font-size: 30px;
   font-weight: bolder;
   letter-spacing: 3px;
+  color: #333333;
+  font-family: "CatamaranBlack";
+  border: 0px;
+  width: 351px;
+  height: 48px;
+  margin: 10px 17px 0 13px;
+  padding: 5px;
+  margin-bottom: 34px;
+  background-color: #ff6600;
 }
 
 main {
@@ -129,39 +159,38 @@ main {
 }
 
 .text1 {
-display: flex;
-justify-content: center;
-margin-top: 70px;
-color: #00a8b2;
-font-size: 30px;
-font-weight: bold;
-line-height: 36px;
-letter-spacing: 3px;
-font-family: 'CatamaranBlack';
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+  color: #00a8b2;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 36px;
+  letter-spacing: 3px;
+  font-family: "CatamaranBlack";
 }
 
 .text2 {
-font-family: 'CatamaranBlack';
-align-self: center;
-margin-top: 17px;
-height: 40px;
-color: #333333;
-font-size: 16px;
-font-weight: 300;
-line-height: 24px;
-letter-spacing: 1.6px;
+  font-family: "Catamaran";
+  align-self: center;
+  margin-top: 17px;
+  height: 40px;
+  color: #333333;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 1.6px;
 }
 
 .text3 {
-align-self: center;
-text-align: center;
-margin-top: 55px;
-color: #00a8b2;
-font-size: 30px;
-font-weight: bold;
-line-height: 36px;
-letter-spacing: 3px;
-
+  align-self: center;
+  text-align: center;
+  margin-top: 55px;
+  color: #00a8b2;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 36px;
+  letter-spacing: 3px;
 }
 
 .content2 {
@@ -175,39 +204,46 @@ letter-spacing: 3px;
 
 .content2 h3 {
   color: #00a8b2;
+  font-family: "CatamaranBlack";
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1.8px;
+  line-height: 36px;
   padding-top: 10px;
-  padding-bottom: 10px; 
+  padding-bottom: 10px;
 }
 
 .content2 p {
   padding-bottom: 30px;
+  font-family: "CatamaranLight";
+  font-weight: 300;
+  letter-spacing: 1.6px;
+  line-height: 24px;
 }
 
 .img1 img {
-width: 68px;
-height: 68px;
+  width: 68px;
+  height: 68px;
 }
 
 .img2 img {
-width: 77px;
-height: 77px;
+  width: 77px;
+  height: 77px;
 }
 
 .img3 img {
-width: 75px;
-height: 71px;
+  width: 75px;
+  height: 71px;
 }
 
 .img4 img {
-width: 74px;
-height: 76px;
+  width: 74px;
+  height: 76px;
 }
-
-
 
 footer {
   font-family: "CatamaranBlack", sans-serif;
-  display:flex;
+  display: flex;
   position: absolute;
   left: 0;
   bottom: 0;
@@ -216,15 +252,12 @@ footer {
   background-color: #333333;
   justify-content: space-between;
   align-items: center;
-  
 }
-
 
 .logo_footer img {
   width: 160px;
   height: 64px;
   margin-left: 54px;
-
 }
 
 .contacts14 {
@@ -258,20 +291,19 @@ a {
   line-height: 1.5;
   letter-spacing: 1.6px;
   text-align: center;
-  
+  font-family: "Catamaran"
 }
 
-@media (max-width: 530px){
+@media (max-width: 530px) {
   footer {
     justify-content: center;
   }
-.logo_footer{
-  display:none;
-
-}
-.contacts14 {
-  margin: 0px;
-}
+  .logo_footer {
+    display: none;
+  }
+  .contacts14 {
+    margin: 0px;
+  }
 }
 
 @media (max-width: 390px) {
